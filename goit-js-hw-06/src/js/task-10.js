@@ -29,7 +29,7 @@ function createBoxes(amount) {
   const newBoxes = [];
   for (let i = 0; i < amount; i += 1) {
     size += 10 * i;
-    const box = `<div class="item" style="margin-top: 15px; margin-right: 30px; margin-bottom: 30px; background-color: ${getRandomHexColor()}; width: ${size}px; height: ${size}px;"></div>`;
+    const box = `<div class="item" style="margin-top: 15px; background-color: ${getRandomHexColor()}; width: ${size}px; height: ${size}px;"></div>`;
     newBoxes.push(box);
   }
   refs.divBoxEl.insertAdjacentHTML('beforeend', newBoxes.join(''));
